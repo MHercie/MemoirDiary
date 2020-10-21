@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500">
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <p>Welcome to the home page</p>
+
+     <!--When Signed in Google -->
+    
+        <div id="userDetails"></div>
+        <button id="signOutBtn">Sign Out</button>
+        <br>
+        <div>
+         <textarea id="insert" cols="30" rows="10" placeholder="Enter Text Here"></textarea>
+         <br>
+         <input type="file" accept="image/*" id="photo" onchange="process(event)"  name="image" >
+
+         <button onclick="uploadImage()" id="uploadImage">Upload Image</button>
+         <br> 
+        </div>
+           <p><img  id="preview_image" scr=""/></p>
+           <p><img  id="preview" alt=""></p>
+           <p><img  id="preview2" alt=""></p>
+        <br>
+        <div>
+            <button onclick="writeData()" id="writeData">Submit</button>
+        </div>
+        
+    
+    <script src="login.js"></script>
+    <script src=" google.js"></script>
+    <script src="app1.js"></script>
+</body>
+</html>
