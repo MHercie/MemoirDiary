@@ -1,12 +1,5 @@
 let firebaseConfig = {
-    apiKey: "AIzaSyB-utoht1yIY580RGfYBuwI89rMYMfYJHU",
-    authDomain: "memoirdiary-893f1.firebaseapp.com",
-    databaseURL: "https://memoirdiary-893f1.firebaseio.com",
-    projectId: "memoirdiary-893f1",
-    storageBucket: "memoirdiary-893f1.appspot.com",
-    messagingSenderId: "827039837419",
-    appId: "1:827039837419:web:e7f97b0f37c0cb7c5e22ae",
-    measurementId: "G-NVSK0V391T"
+
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
